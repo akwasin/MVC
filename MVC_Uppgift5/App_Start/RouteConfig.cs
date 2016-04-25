@@ -25,7 +25,6 @@ namespace MVC_Uppgift5
                 defaults: new { controller = "Life", action = "Eye", id = UrlParameter.Optional }
             );
 
-
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
