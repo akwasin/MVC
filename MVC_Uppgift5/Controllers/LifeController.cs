@@ -19,8 +19,16 @@ namespace MVC_Uppgift5.Controllers
             return View();
         }
 
-        public ActionResult Live()
+        public ActionResult Live(int? id)
         {
+            if (id != null)
+            {
+                ViewBag.Quantity = id;
+            }
+            else
+            {
+                ViewBag.Quantity = "none";
+            }
             return View();
         }
     }

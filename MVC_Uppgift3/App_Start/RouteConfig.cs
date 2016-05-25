@@ -14,18 +14,17 @@ namespace MVC_Uppgift3
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Sell",
+                name: "C2C",
                 url: "Sell/{action}/{id}",
                 defaults: new { controller = "Sell", action = "C2C", id = UrlParameter.Optional }
             );
 
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+           name: "Default",
+           url: "{controller}/{action}/{id}",
+           defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+          );
 
-            
         }
     }
 }
